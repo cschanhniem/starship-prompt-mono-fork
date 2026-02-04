@@ -37,6 +37,21 @@ vim starship.toml  # Set your shell character: `@` - xonsh, `$` - bash, `%` - zs
 Use starship-prompt-mono with xonsh via [xontrib-prompt-starship](https://github.com/anki-code/xontrib-prompt-starship).
 To make an accent to the input take a look [LolcatProcessor](https://github.com/xonsh/xonsh/discussions/6050).
 
+### How to add env variable
+
+Add `$env_var` to `format`:
+
+```xsh
+# ~/.config/starship.toml
+format = """$username$hostname$directory$fill[$all](grey)$time$line_break$env_var$character"""
+
+[env_var.MYPROJECT]
+variable = "MYPROJECT"
+format = "[$env_value]($style)"
+style = "bold blue"
+default = ""
+```
+
 ## Credits
 
 * [xontrib-prompt-bar](https://github.com/anki-code/xontrib-prompt-bar) - The bar prompt for xonsh shell with customizable sections and Starship support.
