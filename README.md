@@ -5,10 +5,10 @@
 
 ## Concept
 
-* No color juggling and spam with emojis.
-* Focus on input line and current directory.
-* Command always starts at a fixed position.
-* Output is separated by a line.
+* No color juggling or emoji spam.
+* Focus on the input line and current directory.
+* The command prompt always starts at a fixed position.
+* Output is separated by a divider line.
 * Time matters.
 
 If you like the idea click ⭐ on the repo and spread the word about it.
